@@ -1,0 +1,349 @@
+{
+  "riddles": [
+    {
+      "answers": [
+        "Echo Shard",
+        "echo_shard",
+        "Echo Shards"
+      ],
+      "clues": [
+        "I am an item you can neither craft nor get from a mob.",
+        "You only find me in chests deep down in the darkness, where you'd better stay quiet.",
+        "Eight of me around a compass make a compass that points to where you last died.",
+        "I come from the Ancient City."
+      ]
+    },
+    {
+      "answers": [
+        "Totem of Undying",
+        "Totem",
+        "totem_of_undying"
+      ],
+      "clues": [
+        "You can't craft me.",
+        "A resident of woodland mansions always drops me when it dies – it also shows up in raids.",
+        "Hold me in your hand and I save you from death exactly once.",
+        "I am golden, have a face and crumble after I have saved you."
+      ]
+    },
+    {
+      "answers": [
+        "Heart of the Sea",
+        "heart_of_the_sea"
+      ],
+      "clues": [
+        "I lie in a buried chest – you usually find it with a treasure map.",
+        "I am blue and pulse like a heart.",
+        "Surrounded by eight nautilus shells I become a source of underwater power.",
+        "My name sounds like the center of the ocean."
+      ]
+    },
+    {
+      "answers": [
+        "Elytra",
+        "elytra"
+      ],
+      "clues": [
+        "You can't craft me, and no mob drops me.",
+        "You find me in an item frame aboard a ship that never sails.",
+        "Phantom membrane repairs me at an anvil.",
+        "With firework rockets I become your engine in the air."
+      ]
+    },
+    {
+      "answers": [
+        "Trident",
+        "trident"
+      ],
+      "clues": [
+        "You can't craft me.",
+        "Only a single mob can drop me – it lives underwater.",
+        "Throw me at an enemy during a thunderstorm with the right enchantment, and lightning strikes.",
+        "I am a throwing weapon with three prongs."
+      ]
+    },
+    {
+      "answers": [
+        "Beacon",
+        "beacon"
+      ],
+      "clues": [
+        "I need five glass, three obsidian and something only a three-headed boss drops.",
+        "I unfold my power on a pyramid of mineral blocks.",
+        "I give nearby players effects like Haste or Strength.",
+        "I send a beam of light into the sky."
+      ]
+    },
+    {
+      "answers": [
+        "Respawn Anchor",
+        "respawn_anchor"
+      ],
+      "clues": [
+        "I am made of six crying obsidian and three glowstone blocks.",
+        "I am charged with glowstone.",
+        "In the Overworld I explode when you try to use me.",
+        "In the Nether I set your respawn point."
+      ]
+    },
+    {
+      "answers": [
+        "Spyglass",
+        "spyglass"
+      ],
+      "clues": [
+        "I am made of exactly three parts: two copper ingots and an amethyst shard.",
+        "I am neither weapon nor armor, but I still belong in your hand.",
+        "With me you see faraway things magnified."
+      ]
+    },
+    {
+      "answers": [
+        "Recovery Compass",
+        "recovery_compass"
+      ],
+      "clues": [
+        "I point neither north nor to the spawn.",
+        "To make me you need a compass and eight shards from the deep.",
+        "I show you where you last died."
+      ]
+    },
+    {
+      "answers": [
+        "Mace",
+        "mace"
+      ],
+      "clues": [
+        "To make me you need a heavy core and a breeze rod.",
+        "You only get the heavy core from an ominous vault in the Trial Chambers.",
+        "The deeper you fall before you strike, the more damage I deal.",
+        "I am a heavy melee weapon."
+      ]
+    },
+    {
+      "answers": [
+        "Shulker Box",
+        "shulker_box"
+      ],
+      "clues": [
+        "I come in sixteen colors and undyed.",
+        "When you break me, I keep everything inside me.",
+        "To make me you need a chest and two shells from creatures of the End cities."
+      ]
+    },
+    {
+      "answers": [
+        "Dragon's Breath",
+        "Dragon Breath",
+        "dragon_breath"
+      ],
+      "clues": [
+        "You can't craft me.",
+        "You catch me with an empty glass bottle from a purple cloud.",
+        "I turn splash potions into lingering potions.",
+        "I come from the mouth of the biggest boss in the End."
+      ]
+    },
+    {
+      "answers": [
+        "Netherite Ingot",
+        "netherite_ingot"
+      ],
+      "clues": [
+        "I am made of four scraps and four gold ingots.",
+        "The scraps are smelted from ancient debris.",
+        "With a smithing template I upgrade diamond gear.",
+        "Items made of me don't burn in lava."
+      ]
+    },
+    {
+      "answers": [
+        "Eye of Ender",
+        "Ender Eye",
+        "ender_eye"
+      ],
+      "clues": [
+        "I am made of blaze powder and an ender pearl.",
+        "Throw me and I fly towards an underground stronghold.",
+        "Sometimes I break after the throw.",
+        "Twelve of me activate the End portal."
+      ]
+    },
+    {
+      "answers": [
+        "Wind Charge",
+        "wind_charge"
+      ],
+      "clues": [
+        "A single breeze rod makes four of me.",
+        "A mob from the Trial Chambers shoots me around.",
+        "Throw me at the ground and I launch you into the air."
+      ]
+    },
+    {
+      "answers": [
+        "Warden",
+        "warden"
+      ],
+      "clues": [
+        "I am blind, but I feel every vibration and I can smell you.",
+        "I appear when a sculk shrieker has been triggered too often.",
+        "I cause Darkness and shoot a sonic boom even through walls.",
+        "I live in the Deep Dark."
+      ]
+    },
+    {
+      "answers": [
+        "Allay",
+        "allay"
+      ],
+      "clues": [
+        "I am blue, I fly and I have small wings.",
+        "Give me an item and I collect all matching ones for you.",
+        "I bring items to a note block I heard playing.",
+        "You free me from cages at pillager outposts."
+      ]
+    },
+    {
+      "answers": [
+        "Sniffer",
+        "sniffer"
+      ],
+      "clues": [
+        "I hatch from an egg found in suspicious sand in ocean ruins.",
+        "I am an ancient animal with a long nose.",
+        "I dig up ancient seeds: torchflower and pitcher plant."
+      ]
+    },
+    {
+      "answers": [
+        "Evoker",
+        "evoker"
+      ],
+      "clues": [
+        "I live in woodland mansions and show up in raids.",
+        "I make fangs snap up from the ground.",
+        "I summon vexes.",
+        "When I die, I always drop a totem."
+      ]
+    },
+    {
+      "answers": [
+        "Elder Guardian",
+        "elder_guardian"
+      ],
+      "clues": [
+        "Three of us guard every ocean monument.",
+        "I give you Mining Fatigue so you can't break anything.",
+        "When I die, I drop a wet sponge.",
+        "I am grey, spiky and much bigger than my smaller relatives."
+      ]
+    },
+    {
+      "answers": [
+        "Wandering Trader",
+        "wandering_trader"
+      ],
+      "clues": [
+        "I come to visit with two llamas.",
+        "At night I drink a potion of invisibility.",
+        "I sell plants, blocks and dyes for emeralds.",
+        "After a while I disappear again."
+      ]
+    },
+    {
+      "answers": [
+        "Nether Star",
+        "nether_star"
+      ],
+      "clues": [
+        "I drop from a boss that players have to create themselves.",
+        "Explosions can't harm me.",
+        "There is no beacon without me."
+      ]
+    },
+    {
+      "answers": [
+        "Wither",
+        "wither"
+      ],
+      "clues": [
+        "I am created from soul sand and three skulls.",
+        "I have three heads.",
+        "My skulls cause an effect that turns your hearts black.",
+        "When I die, I drop a Nether Star."
+      ]
+    },
+    {
+      "answers": [
+        "Ender Dragon",
+        "ender_dragon",
+        "Dragon"
+      ],
+      "clues": [
+        "Crystals on tall pillars heal me.",
+        "When I am defeated, a portal and an egg appear.",
+        "I live on an island in the void."
+      ]
+    },
+    {
+      "answers": [
+        "Copper Golem",
+        "copper_golem"
+      ],
+      "clues": [
+        "I am made from a block of copper and a carved pumpkin.",
+        "I carry items from copper chests into other chests.",
+        "Over time I oxidize like copper blocks."
+      ]
+    },
+    {
+      "answers": [
+        "Axolotl",
+        "axolotl"
+      ],
+      "clues": [
+        "I live underwater in lush caves.",
+        "When I get hurt, I play dead.",
+        "You breed me with a bucket of tropical fish.",
+        "I come in pink, brown, gold, cyan – and very rarely blue."
+      ]
+    },
+    {
+      "answers": [
+        "Sponge",
+        "sponge",
+        "Wet Sponge"
+      ],
+      "clues": [
+        "An elder guardian drops me wet.",
+        "In a furnace I dry out again.",
+        "I soak up the water around me."
+      ]
+    }
+  ],
+  "terms": [
+    "Enchanted Golden Apple",
+    "Totem of Undying",
+    "Heart of the Sea",
+    "Wandering Trader",
+    "Elder Guardian",
+    "Recovery Compass",
+    "Respawn Anchor",
+    "Book and Quill",
+    "Potion of Night Vision",
+    "Potion of Fire Resistance",
+    "Potion of Invisibility",
+    "Crying Obsidian",
+    "Sticky Piston",
+    "Pillager Outpost",
+    "Cooked Porkchop",
+    "Polished Blackstone Bricks",
+    "Mossy Cobblestone",
+    "Woodland Mansion",
+    "Ocean Monument",
+    "Nether Fortress",
+    "Enchanting Table",
+    "Brewing Stand"
+  ]
+}

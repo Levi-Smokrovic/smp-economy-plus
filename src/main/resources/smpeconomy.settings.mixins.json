@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.smpeconomy.features.settings.mixin",
+  "compatibilityLevel": "${mixin_java}",
+  "plugin": "dev.smpeconomy.core.module.ModuleMixinPlugin",
+  "mixins": [
+    "NaturalSpawnerMixin",
+    "NetherPortalBlockMixin",
+    "PatrolSpawnerInvoker",
+    "PatrolSpawnerMixin",
+    "PhantomSpawnerMixin",
+    "VillageSiegeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

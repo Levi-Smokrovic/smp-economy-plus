@@ -1,0 +1,80 @@
+{
+  "_info": "Crates for /crates. id = key type (common/rare/epic must exist). Each reward has exactly one of money (cents, 25000 = $250), item (+count, optional enchantments {\"minecraft:mending\": 1} and name) or key (crate ID, +count). weight = relative chance (0 = off). announce = announce the win in chat. After changes: /smpeco reload.",
+  "crates": [
+    {
+      "id": "common",
+      "name": "§fCommon Crate",
+      "icon": "minecraft:chest",
+      "rewards": [
+        { "id": "money_100", "weight": 220, "money": 10000 },
+        { "id": "money_250", "weight": 180, "money": 25000 },
+        { "id": "money_500", "weight": 100, "money": 50000 },
+        { "id": "money_1000", "weight": 35, "money": 100000 },
+        { "id": "iron", "weight": 100, "item": "minecraft:iron_ingot", "count": 16 },
+        { "id": "gold", "weight": 70, "item": "minecraft:gold_ingot", "count": 8 },
+        { "id": "diamonds", "weight": 50, "item": "minecraft:diamond", "count": 2 },
+        { "id": "coal", "weight": 50, "item": "minecraft:coal", "count": 32 },
+        { "id": "golden_carrots", "weight": 50, "item": "minecraft:golden_carrot", "count": 16 },
+        { "id": "ender_pearls", "weight": 40, "item": "minecraft:ender_pearl", "count": 8 },
+        { "id": "experience", "weight": 40, "item": "minecraft:experience_bottle", "count": 16 },
+        { "id": "bread", "weight": 25, "item": "minecraft:bread", "count": 32 },
+        { "id": "book_unbreaking", "weight": 12, "item": "minecraft:enchanted_book", "enchantments": { "minecraft:unbreaking": 3 } },
+        { "id": "book_efficiency", "weight": 12, "item": "minecraft:enchanted_book", "enchantments": { "minecraft:efficiency": 4 } },
+        { "id": "book_protection", "weight": 8, "item": "minecraft:enchanted_book", "enchantments": { "minecraft:protection": 3 } },
+        { "id": "key_rare", "weight": 8, "key": "rare", "count": 1 }
+      ]
+    },
+    {
+      "id": "rare",
+      "name": "§9Rare Crate",
+      "icon": "minecraft:ender_chest",
+      "rewards": [
+        { "id": "money_500", "weight": 170, "money": 50000 },
+        { "id": "money_1000", "weight": 170, "money": 100000 },
+        { "id": "money_2500", "weight": 90, "money": 250000 },
+        { "id": "money_5000", "weight": 25, "money": 500000 },
+        { "id": "diamonds", "weight": 100, "item": "minecraft:diamond", "count": 6 },
+        { "id": "iron_blocks", "weight": 70, "item": "minecraft:iron_block", "count": 4 },
+        { "id": "emeralds", "weight": 50, "item": "minecraft:emerald", "count": 8 },
+        { "id": "golden_apples", "weight": 60, "item": "minecraft:golden_apple", "count": 4 },
+        { "id": "netherite_scrap", "weight": 25, "item": "minecraft:netherite_scrap", "count": 1 },
+        { "id": "book_mending", "weight": 30, "item": "minecraft:enchanted_book", "enchantments": { "minecraft:mending": 1 } },
+        { "id": "book_efficiency", "weight": 35, "item": "minecraft:enchanted_book", "enchantments": { "minecraft:efficiency": 5 } },
+        { "id": "book_protection", "weight": 35, "item": "minecraft:enchanted_book", "enchantments": { "minecraft:protection": 4 } },
+        { "id": "book_unbreaking", "weight": 35, "item": "minecraft:enchanted_book", "enchantments": { "minecraft:unbreaking": 3 } },
+        { "id": "book_fortune", "weight": 25, "item": "minecraft:enchanted_book", "enchantments": { "minecraft:fortune": 3 } },
+        { "id": "book_looting", "weight": 20, "item": "minecraft:enchanted_book", "enchantments": { "minecraft:looting": 3 } },
+        { "id": "name_tags", "weight": 25, "item": "minecraft:name_tag", "count": 3 },
+        { "id": "saddle", "weight": 10, "item": "minecraft:saddle", "count": 1 },
+        { "id": "pickaxe", "weight": 15, "item": "minecraft:diamond_pickaxe", "enchantments": { "minecraft:efficiency": 4, "minecraft:unbreaking": 3 } },
+        { "id": "key_epic", "weight": 10, "key": "epic", "count": 1, "announce": true }
+      ]
+    },
+    {
+      "id": "epic",
+      "name": "§5Epic Crate",
+      "icon": "minecraft:purple_shulker_box",
+      "rewards": [
+        { "id": "money_5000", "weight": 170, "money": 500000 },
+        { "id": "money_10000", "weight": 150, "money": 1000000 },
+        { "id": "money_25000", "weight": 40, "money": 2500000, "announce": true },
+        { "id": "diamond_blocks", "weight": 90, "item": "minecraft:diamond_block", "count": 3 },
+        { "id": "netherite_scrap", "weight": 70, "item": "minecraft:netherite_scrap", "count": 4 },
+        { "id": "netherite_ingots", "weight": 30, "item": "minecraft:netherite_ingot", "count": 1, "announce": true },
+        { "id": "enchanted_golden_apple", "weight": 40, "item": "minecraft:enchanted_golden_apple", "count": 1, "announce": true },
+        { "id": "totem", "weight": 50, "item": "minecraft:totem_of_undying", "count": 1 },
+        { "id": "elytra", "weight": 10, "item": "minecraft:elytra", "count": 1, "announce": true },
+        { "id": "book_mending", "weight": 70, "item": "minecraft:enchanted_book", "enchantments": { "minecraft:mending": 1 } },
+        { "id": "book_protection", "weight": 40, "item": "minecraft:enchanted_book", "enchantments": { "minecraft:protection": 4 } },
+        { "id": "book_efficiency", "weight": 40, "item": "minecraft:enchanted_book", "enchantments": { "minecraft:efficiency": 5 } },
+        { "id": "book_sharpness", "weight": 30, "item": "minecraft:enchanted_book", "enchantments": { "minecraft:sharpness": 5 } },
+        { "id": "shulker_shells", "weight": 40, "item": "minecraft:shulker_shell", "count": 4 },
+        { "id": "nether_star", "weight": 15, "item": "minecraft:nether_star", "count": 1, "announce": true },
+        { "id": "master_pickaxe", "weight": 20, "item": "minecraft:netherite_pickaxe", "enchantments": { "minecraft:efficiency": 5, "minecraft:unbreaking": 3, "minecraft:fortune": 3, "minecraft:mending": 1 }, "announce": true },
+        { "id": "master_sword", "weight": 20, "item": "minecraft:netherite_sword", "enchantments": { "minecraft:sharpness": 5, "minecraft:unbreaking": 3, "minecraft:looting": 3, "minecraft:mending": 1 }, "announce": true },
+        { "id": "master_chestplate", "weight": 25, "item": "minecraft:diamond_chestplate", "enchantments": { "minecraft:protection": 4, "minecraft:unbreaking": 3, "minecraft:mending": 1 }, "announce": true },
+        { "id": "key_rare", "weight": 50, "key": "rare", "count": 2 }
+      ]
+    }
+  ]
+}

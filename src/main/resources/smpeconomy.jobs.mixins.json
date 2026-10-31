@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.smpeconomy.features.jobs.mixin",
+  "compatibilityLevel": "${mixin_java}",
+  "plugin": "dev.smpeconomy.core.module.ModuleMixinPlugin",
+  "mixins": [
+    "BoneMealItemMixin",
+    "FishingHookMixin",
+    "LevelGrowthCaptureMixin",
+    "TreeHarvesterCompatMixin",
+    "VeinminerCompatMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

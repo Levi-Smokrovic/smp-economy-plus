@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.smpeconomy.features.minigames.mixin",
+  "compatibilityLevel": "${mixin_java}",
+  "plugin": "dev.smpeconomy.core.module.ModuleMixinPlugin",
+  "mixins": [
+    "ServerExplosionMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

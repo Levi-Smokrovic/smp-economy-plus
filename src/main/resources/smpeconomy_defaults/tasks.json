@@ -1,0 +1,844 @@
+{
+  "slots": [
+    "easy",
+    "medium",
+    "hard"
+  ],
+  "bonusMoney": 20000,
+  "bonusKeyTier": "common",
+  "bonusKeys": 1,
+  "countInCreative": false,
+  "tasks": [
+    {
+      "id": "quarry",
+      "name": "Quarry",
+      "description": "Mine {n} stone blocks",
+      "icon": "minecraft:stone",
+      "category": "mining",
+      "difficulty": "easy",
+      "stats": [
+        "mined:#minecraft:base_stone_overworld"
+      ],
+      "min": 128,
+      "max": 256,
+      "step": 32,
+      "reward": 10000
+    },
+    {
+      "id": "lumberjack",
+      "name": "Lumberjack",
+      "description": "Chop {n} logs",
+      "icon": "minecraft:oak_log",
+      "category": "wood",
+      "difficulty": "easy",
+      "stats": [
+        "mined:#minecraft:logs"
+      ],
+      "min": 32,
+      "max": 64,
+      "step": 8,
+      "reward": 10000
+    },
+    {
+      "id": "groundwork",
+      "name": "Groundwork",
+      "description": "Dig {n} dirt blocks",
+      "icon": "minecraft:dirt",
+      "category": "digging",
+      "difficulty": "easy",
+      "stats": [
+        "mined:#minecraft:dirt"
+      ],
+      "min": 64,
+      "max": 128,
+      "step": 16,
+      "reward": 8000
+    },
+    {
+      "id": "sandbox",
+      "name": "Sandbox",
+      "description": "Dig {n} Sand",
+      "icon": "minecraft:sand",
+      "category": "digging",
+      "difficulty": "easy",
+      "stats": [
+        "mined:#minecraft:sand"
+      ],
+      "min": 64,
+      "max": 128,
+      "step": 16,
+      "reward": 9000
+    },
+    {
+      "id": "gravel_pit",
+      "name": "Gravel Pit",
+      "description": "Dig {n} Gravel",
+      "icon": "minecraft:gravel",
+      "category": "digging",
+      "difficulty": "easy",
+      "stats": [
+        "mined:minecraft:gravel"
+      ],
+      "min": 32,
+      "max": 64,
+      "step": 8,
+      "reward": 9000
+    },
+    {
+      "id": "coal_country",
+      "name": "Coal Country",
+      "description": "Mine {n} Coal Ore",
+      "icon": "minecraft:coal_ore",
+      "category": "ores",
+      "difficulty": "easy",
+      "stats": [
+        "mined:#minecraft:coal_ores"
+      ],
+      "min": 16,
+      "max": 32,
+      "step": 4,
+      "reward": 12000
+    },
+    {
+      "id": "copper_vein",
+      "name": "Copper Vein",
+      "description": "Mine {n} Copper Ore",
+      "icon": "minecraft:copper_ore",
+      "category": "ores",
+      "difficulty": "easy",
+      "stats": [
+        "mined:#minecraft:copper_ores"
+      ],
+      "min": 16,
+      "max": 32,
+      "step": 4,
+      "reward": 12000
+    },
+    {
+      "id": "zombie_hunt",
+      "name": "Zombie Hunt",
+      "description": "Kill {n} Zombies",
+      "icon": "minecraft:rotten_flesh",
+      "category": "combat",
+      "difficulty": "easy",
+      "stats": [
+        "killed:minecraft:zombie",
+        "killed:minecraft:husk",
+        "killed:minecraft:drowned",
+        "killed:minecraft:zombie_villager"
+      ],
+      "min": 10,
+      "max": 20,
+      "step": 5,
+      "reward": 12000
+    },
+    {
+      "id": "bone_breaker",
+      "name": "Bone Breaker",
+      "description": "Kill {n} Skeletons",
+      "icon": "minecraft:bone",
+      "category": "combat",
+      "difficulty": "easy",
+      "stats": [
+        "killed:minecraft:skeleton",
+        "killed:minecraft:stray",
+        "killed:minecraft:bogged",
+        "killed:minecraft:parched"
+      ],
+      "min": 10,
+      "max": 20,
+      "step": 5,
+      "reward": 12000
+    },
+    {
+      "id": "spider_hunter",
+      "name": "Spider Hunter",
+      "description": "Kill {n} Spiders",
+      "icon": "minecraft:string",
+      "category": "combat",
+      "difficulty": "easy",
+      "stats": [
+        "killed:minecraft:spider",
+        "killed:minecraft:cave_spider"
+      ],
+      "min": 8,
+      "max": 16,
+      "step": 4,
+      "reward": 11000
+    },
+    {
+      "id": "gone_fishing",
+      "name": "Gone Fishing",
+      "description": "Catch {n} fish",
+      "icon": "minecraft:cod",
+      "category": "fishing",
+      "difficulty": "easy",
+      "stats": [
+        "custom:minecraft:fish_caught"
+      ],
+      "min": 8,
+      "max": 16,
+      "step": 2,
+      "reward": 12000
+    },
+    {
+      "id": "stroll",
+      "name": "Stroll",
+      "description": "Walk {n} blocks",
+      "icon": "minecraft:leather_boots",
+      "category": "movement",
+      "difficulty": "easy",
+      "stats": [
+        "custom:minecraft:walk_one_cm",
+        "custom:minecraft:sprint_one_cm",
+        "custom:minecraft:crouch_one_cm"
+      ],
+      "min": 1000,
+      "max": 2000,
+      "step": 250,
+      "reward": 8000,
+      "divisor": 100
+    },
+    {
+      "id": "bouncy_castle",
+      "name": "Bouncy Castle",
+      "description": "Jump {n} times",
+      "icon": "minecraft:rabbit_foot",
+      "category": "movement",
+      "difficulty": "easy",
+      "stats": [
+        "custom:minecraft:jump"
+      ],
+      "min": 200,
+      "max": 400,
+      "step": 50,
+      "reward": 6000
+    },
+    {
+      "id": "baker",
+      "name": "Baker",
+      "description": "Bake {n} Bread",
+      "icon": "minecraft:bread",
+      "category": "farm",
+      "difficulty": "easy",
+      "stats": [
+        "crafted:minecraft:bread"
+      ],
+      "min": 16,
+      "max": 32,
+      "step": 4,
+      "reward": 10000
+    },
+    {
+      "id": "animal_lover",
+      "name": "Animal Lover",
+      "description": "Breed {n} animals",
+      "icon": "minecraft:wheat",
+      "category": "farm",
+      "difficulty": "easy",
+      "stats": [
+        "custom:minecraft:animals_bred"
+      ],
+      "min": 5,
+      "max": 10,
+      "step": 1,
+      "reward": 10000
+    },
+    {
+      "id": "sugar_cane_harvest",
+      "name": "Sugar Cane Harvest",
+      "description": "Harvest {n} Sugar Cane",
+      "icon": "minecraft:sugar_cane",
+      "category": "farm",
+      "difficulty": "easy",
+      "stats": [
+        "mined:minecraft:sugar_cane"
+      ],
+      "min": 32,
+      "max": 64,
+      "step": 8,
+      "reward": 9000
+    },
+    {
+      "id": "gardener",
+      "name": "Gardener",
+      "description": "Use {n} Bone Meal",
+      "icon": "minecraft:bone_meal",
+      "category": "farm",
+      "difficulty": "easy",
+      "stats": [
+        "used:minecraft:bone_meal"
+      ],
+      "min": 32,
+      "max": 64,
+      "step": 8,
+      "reward": 8000
+    },
+    {
+      "id": "butcher",
+      "name": "Butcher",
+      "description": "Kill {n} farm animals",
+      "icon": "minecraft:porkchop",
+      "category": "hunting",
+      "difficulty": "easy",
+      "stats": [
+        "killed:minecraft:cow",
+        "killed:minecraft:pig",
+        "killed:minecraft:sheep",
+        "killed:minecraft:chicken",
+        "killed:minecraft:rabbit"
+      ],
+      "min": 10,
+      "max": 20,
+      "step": 5,
+      "reward": 8000
+    },
+    {
+      "id": "light_bringer",
+      "name": "Light Bringer",
+      "description": "Craft {n} Torches",
+      "icon": "minecraft:torch",
+      "category": "crafting",
+      "difficulty": "easy",
+      "stats": [
+        "crafted:minecraft:torch"
+      ],
+      "min": 64,
+      "max": 128,
+      "step": 16,
+      "reward": 8000
+    },
+    {
+      "id": "glassblower",
+      "name": "Glassblower",
+      "description": "Smelt {n} Glass",
+      "icon": "minecraft:glass",
+      "category": "crafting",
+      "difficulty": "easy",
+      "stats": [
+        "crafted:minecraft:glass"
+      ],
+      "min": 32,
+      "max": 64,
+      "step": 8,
+      "reward": 10000
+    },
+    {
+      "id": "charcoal_burner",
+      "name": "Charcoal Burner",
+      "description": "Make {n} Charcoal",
+      "icon": "minecraft:charcoal",
+      "category": "crafting",
+      "difficulty": "easy",
+      "stats": [
+        "crafted:minecraft:charcoal"
+      ],
+      "min": 16,
+      "max": 32,
+      "step": 4,
+      "reward": 10000
+    },
+    {
+      "id": "iron_age",
+      "name": "Iron Age",
+      "description": "Mine {n} Iron Ore",
+      "icon": "minecraft:iron_ore",
+      "category": "ores",
+      "difficulty": "medium",
+      "stats": [
+        "mined:#minecraft:iron_ores"
+      ],
+      "min": 16,
+      "max": 32,
+      "step": 4,
+      "reward": 20000
+    },
+    {
+      "id": "gold_digger",
+      "name": "Gold Digger",
+      "description": "Mine {n} Gold Ore",
+      "icon": "minecraft:gold_ore",
+      "category": "ores",
+      "difficulty": "medium",
+      "stats": [
+        "mined:#minecraft:gold_ores"
+      ],
+      "min": 12,
+      "max": 24,
+      "step": 4,
+      "reward": 22000
+    },
+    {
+      "id": "red_gold",
+      "name": "Red Gold",
+      "description": "Mine {n} Redstone Ore",
+      "icon": "minecraft:redstone",
+      "category": "ores",
+      "difficulty": "medium",
+      "stats": [
+        "mined:#minecraft:redstone_ores"
+      ],
+      "min": 12,
+      "max": 24,
+      "step": 4,
+      "reward": 20000
+    },
+    {
+      "id": "feeling_blue",
+      "name": "Feeling Blue",
+      "description": "Mine {n} Lapis Lazuli Ore",
+      "icon": "minecraft:lapis_lazuli",
+      "category": "ores",
+      "difficulty": "medium",
+      "stats": [
+        "mined:#minecraft:lapis_ores"
+      ],
+      "min": 6,
+      "max": 12,
+      "step": 2,
+      "reward": 20000
+    },
+    {
+      "id": "deep_dive",
+      "name": "Deep Dive",
+      "description": "Mine {n} Deepslate",
+      "icon": "minecraft:deepslate",
+      "category": "mining",
+      "difficulty": "medium",
+      "stats": [
+        "mined:minecraft:deepslate"
+      ],
+      "min": 128,
+      "max": 256,
+      "step": 32,
+      "reward": 18000
+    },
+    {
+      "id": "nether_mining",
+      "name": "Nether Mining",
+      "description": "Mine {n} Netherrack",
+      "icon": "minecraft:netherrack",
+      "category": "nether",
+      "difficulty": "medium",
+      "stats": [
+        "mined:minecraft:netherrack"
+      ],
+      "min": 128,
+      "max": 256,
+      "step": 32,
+      "reward": 18000
+    },
+    {
+      "id": "quartz_mine",
+      "name": "Quartz Mine",
+      "description": "Mine {n} Nether Quartz Ore",
+      "icon": "minecraft:quartz",
+      "category": "nether",
+      "difficulty": "medium",
+      "stats": [
+        "mined:minecraft:nether_quartz_ore"
+      ],
+      "min": 16,
+      "max": 32,
+      "step": 4,
+      "reward": 22000
+    },
+    {
+      "id": "creeper_alert",
+      "name": "Creeper Alert",
+      "description": "Kill {n} Creepers",
+      "icon": "minecraft:gunpowder",
+      "category": "combat",
+      "difficulty": "medium",
+      "stats": [
+        "killed:minecraft:creeper"
+      ],
+      "min": 5,
+      "max": 10,
+      "step": 1,
+      "reward": 20000
+    },
+    {
+      "id": "slimy",
+      "name": "Slimy",
+      "description": "Kill {n} Slimes or Magma Cubes",
+      "icon": "minecraft:slime_ball",
+      "category": "combat",
+      "difficulty": "medium",
+      "stats": [
+        "killed:minecraft:slime",
+        "killed:minecraft:magma_cube"
+      ],
+      "min": 8,
+      "max": 16,
+      "step": 2,
+      "reward": 20000
+    },
+    {
+      "id": "trading_trip",
+      "name": "Trading Trip",
+      "description": "Trade with villagers {n} times",
+      "icon": "minecraft:emerald",
+      "category": "trading",
+      "difficulty": "medium",
+      "stats": [
+        "custom:minecraft:traded_with_villager"
+      ],
+      "min": 5,
+      "max": 10,
+      "step": 1,
+      "reward": 20000
+    },
+    {
+      "id": "pumpkin_melon",
+      "name": "Pumpkin & Melon",
+      "description": "Harvest {n} Pumpkins or Melons",
+      "icon": "minecraft:pumpkin",
+      "category": "farm",
+      "difficulty": "medium",
+      "stats": [
+        "mined:minecraft:pumpkin",
+        "mined:minecraft:melon"
+      ],
+      "min": 16,
+      "max": 32,
+      "step": 4,
+      "reward": 18000
+    },
+    {
+      "id": "fletcher",
+      "name": "Fletcher",
+      "description": "Craft {n} Arrows",
+      "icon": "minecraft:arrow",
+      "category": "crafting",
+      "difficulty": "medium",
+      "stats": [
+        "crafted:minecraft:arrow"
+      ],
+      "min": 32,
+      "max": 64,
+      "step": 8,
+      "reward": 18000
+    },
+    {
+      "id": "librarian",
+      "name": "Librarian",
+      "description": "Craft {n} Books",
+      "icon": "minecraft:book",
+      "category": "crafting",
+      "difficulty": "medium",
+      "stats": [
+        "crafted:minecraft:book"
+      ],
+      "min": 8,
+      "max": 16,
+      "step": 2,
+      "reward": 20000
+    },
+    {
+      "id": "golden_carrots",
+      "name": "Golden Carrots",
+      "description": "Craft {n} Golden Carrots",
+      "icon": "minecraft:golden_carrot",
+      "category": "farm",
+      "difficulty": "medium",
+      "stats": [
+        "crafted:minecraft:golden_carrot"
+      ],
+      "min": 8,
+      "max": 16,
+      "step": 2,
+      "reward": 22000
+    },
+    {
+      "id": "pastry_chef",
+      "name": "Pastry Chef",
+      "description": "Bake {n} Cakes",
+      "icon": "minecraft:cake",
+      "category": "farm",
+      "difficulty": "medium",
+      "stats": [
+        "crafted:minecraft:cake"
+      ],
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "reward": 20000
+    },
+    {
+      "id": "deep_sea_fisher",
+      "name": "Deep Sea Fisher",
+      "description": "Catch {n} fish",
+      "icon": "minecraft:salmon",
+      "category": "fishing",
+      "difficulty": "medium",
+      "stats": [
+        "custom:minecraft:fish_caught"
+      ],
+      "min": 20,
+      "max": 32,
+      "step": 4,
+      "reward": 22000
+    },
+    {
+      "id": "swimmer",
+      "name": "Swimmer",
+      "description": "Swim {n} blocks",
+      "icon": "minecraft:water_bucket",
+      "category": "movement",
+      "difficulty": "medium",
+      "stats": [
+        "custom:minecraft:swim_one_cm"
+      ],
+      "min": 300,
+      "max": 600,
+      "step": 100,
+      "reward": 16000,
+      "divisor": 100
+    },
+    {
+      "id": "captain",
+      "name": "Captain",
+      "description": "Travel {n} blocks by boat",
+      "icon": "minecraft:oak_boat",
+      "category": "movement",
+      "difficulty": "medium",
+      "stats": [
+        "custom:minecraft:boat_one_cm"
+      ],
+      "min": 1000,
+      "max": 2000,
+      "step": 250,
+      "reward": 16000,
+      "divisor": 100
+    },
+    {
+      "id": "diamond_fever",
+      "name": "Diamond Fever",
+      "description": "Mine {n} Diamond Ore",
+      "icon": "minecraft:diamond",
+      "category": "ores",
+      "difficulty": "hard",
+      "stats": [
+        "mined:#minecraft:diamond_ores"
+      ],
+      "min": 4,
+      "max": 8,
+      "step": 1,
+      "reward": 40000
+    },
+    {
+      "id": "emerald_seeker",
+      "name": "Emerald Seeker",
+      "description": "Mine {n} Emerald Ore",
+      "icon": "minecraft:emerald_ore",
+      "category": "ores",
+      "difficulty": "hard",
+      "stats": [
+        "mined:#minecraft:emerald_ores"
+      ],
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "reward": 45000
+    },
+    {
+      "id": "ancient_debris",
+      "name": "Ancient Debris",
+      "description": "Mine {n} Ancient Debris",
+      "icon": "minecraft:ancient_debris",
+      "category": "nether",
+      "difficulty": "hard",
+      "stats": [
+        "mined:minecraft:ancient_debris"
+      ],
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "reward": 50000
+    },
+    {
+      "id": "tunnel_borer",
+      "name": "Tunnel Borer",
+      "description": "Mine {n} stone blocks",
+      "icon": "minecraft:iron_pickaxe",
+      "category": "mining",
+      "difficulty": "hard",
+      "stats": [
+        "mined:#minecraft:base_stone_overworld"
+      ],
+      "min": 512,
+      "max": 768,
+      "step": 64,
+      "reward": 30000
+    },
+    {
+      "id": "forestry",
+      "name": "Forestry",
+      "description": "Chop {n} logs",
+      "icon": "minecraft:iron_axe",
+      "category": "wood",
+      "difficulty": "hard",
+      "stats": [
+        "mined:#minecraft:logs"
+      ],
+      "min": 128,
+      "max": 192,
+      "step": 16,
+      "reward": 30000
+    },
+    {
+      "id": "enderman_hunt",
+      "name": "Enderman Hunt",
+      "description": "Kill {n} Endermen",
+      "icon": "minecraft:ender_pearl",
+      "category": "combat",
+      "difficulty": "hard",
+      "stats": [
+        "killed:minecraft:enderman"
+      ],
+      "min": 5,
+      "max": 10,
+      "step": 1,
+      "reward": 35000
+    },
+    {
+      "id": "witch_hunt",
+      "name": "Witch Hunt",
+      "description": "Kill {n} Witches",
+      "icon": "minecraft:glass_bottle",
+      "category": "combat",
+      "difficulty": "hard",
+      "stats": [
+        "killed:minecraft:witch"
+      ],
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "reward": 35000
+    },
+    {
+      "id": "monster_hunter",
+      "name": "Monster Hunter",
+      "description": "Kill {n} monsters",
+      "icon": "minecraft:iron_sword",
+      "category": "combat",
+      "difficulty": "hard",
+      "stats": [
+        "killed:minecraft:zombie",
+        "killed:minecraft:husk",
+        "killed:minecraft:drowned",
+        "killed:minecraft:zombie_villager",
+        "killed:minecraft:skeleton",
+        "killed:minecraft:stray",
+        "killed:minecraft:bogged",
+        "killed:minecraft:parched",
+        "killed:minecraft:spider",
+        "killed:minecraft:cave_spider",
+        "killed:minecraft:creeper",
+        "killed:minecraft:enderman",
+        "killed:minecraft:witch",
+        "killed:minecraft:slime",
+        "killed:minecraft:phantom",
+        "killed:minecraft:pillager"
+      ],
+      "min": 40,
+      "max": 60,
+      "step": 10,
+      "reward": 35000
+    },
+    {
+      "id": "blaze_buster",
+      "name": "Blaze Buster",
+      "description": "Kill {n} Blazes",
+      "icon": "minecraft:blaze_rod",
+      "category": "nether",
+      "difficulty": "hard",
+      "stats": [
+        "killed:minecraft:blaze"
+      ],
+      "min": 6,
+      "max": 12,
+      "step": 2,
+      "reward": 40000
+    },
+    {
+      "id": "ghast_hunt",
+      "name": "Ghast Hunt",
+      "description": "Kill {n} Ghasts",
+      "icon": "minecraft:ghast_tear",
+      "category": "nether",
+      "difficulty": "hard",
+      "stats": [
+        "killed:minecraft:ghast"
+      ],
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "reward": 40000
+    },
+    {
+      "id": "black_bones",
+      "name": "Black Bones",
+      "description": "Kill {n} Wither Skeletons",
+      "icon": "minecraft:wither_skeleton_skull",
+      "category": "nether",
+      "difficulty": "hard",
+      "stats": [
+        "killed:minecraft:wither_skeleton"
+      ],
+      "min": 4,
+      "max": 8,
+      "step": 1,
+      "reward": 45000
+    },
+    {
+      "id": "enchanter",
+      "name": "Enchanter",
+      "description": "Enchant {n} items",
+      "icon": "minecraft:enchanting_table",
+      "category": "magic",
+      "difficulty": "hard",
+      "stats": [
+        "custom:minecraft:enchant_item"
+      ],
+      "min": 3,
+      "max": 5,
+      "step": 1,
+      "reward": 35000
+    },
+    {
+      "id": "wholesaler",
+      "name": "Wholesaler",
+      "description": "Trade with villagers {n} times",
+      "icon": "minecraft:emerald_block",
+      "category": "trading",
+      "difficulty": "hard",
+      "stats": [
+        "custom:minecraft:traded_with_villager"
+      ],
+      "min": 15,
+      "max": 25,
+      "step": 5,
+      "reward": 35000
+    },
+    {
+      "id": "long_journey",
+      "name": "Long Journey",
+      "description": "Walk {n} blocks",
+      "icon": "minecraft:compass",
+      "category": "movement",
+      "difficulty": "hard",
+      "stats": [
+        "custom:minecraft:walk_one_cm",
+        "custom:minecraft:sprint_one_cm",
+        "custom:minecraft:crouch_one_cm"
+      ],
+      "min": 4000,
+      "max": 6000,
+      "step": 500,
+      "reward": 30000,
+      "divisor": 100
+    }
+  ]
+}

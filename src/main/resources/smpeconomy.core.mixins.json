@@ -1,0 +1,25 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.smpeconomy.core.mixin",
+  "compatibilityLevel": "${mixin_java}",
+  "mixins": [
+    "BlockItemMixin",
+    "CommandsMixin",
+    "EndDragonFightOriginMixin",
+    "EntityTypeOriginMixin",
+    "FallingBlockEntityMixin",
+    "LavaFluidMixin",
+    "LevelMixin",
+    "LiquidBlockMixin",
+    "MerchantOfferMixin",
+    "PistonBaseBlockMixin",
+    "PlayerListMixin",
+    "ServerGamePacketListenerImplMixin",
+    "VillagerOriginMixin",
+    "ZombieOriginMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

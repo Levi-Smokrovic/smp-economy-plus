@@ -1,0 +1,14 @@
+{
+  "name": "smp-economy-plus-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "description": "End-to-end tests for SMP Economy+: mineflayer bots and RCON against a local test server",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "mineflayer": "^4.39.0",
+    "prismarine-nbt": "^2.8.0",
+    "rcon-client": "^4.2.5",
+    "vec3": "^0.1.10"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "_info": "Daily Elite (top of the /missions board): exactly one extremely hard mission per day (day change in core.json timezone), the same for all players, once per player per day. No need to accept, progress counts from midnight. Picked deterministically from the enabled entries (each mission once per cycle, never the same one two days in a row; 'seed' changes the order from the next day on). Amounts in cents. Types: kill (entities = mob IDs, 'amount' in total; only natural mobs the player killed, projectiles count, pets don't; spawner, spawn egg, bred, summoned and respawned mobs never count; forbidden: players, Ender Dragon, golems), raid (win a raid as Hero of the Village that started at level 'minRaidLevel' 1-5 – measured when the first wave spawns, Bad Omen mid-raid doesn't raise it; from level 2 on there is the same bonus wave, higher levels only bring more strongly enchanted raiders; only counts with at least 'minRaidKills' raiders killed by the player and at least 'minRaidKillShare' (0-1) of all player kills in this raid, and if the player is in the village at the victory, max. 96 blocks from the center), deliver (item, amount at once, unmodified, no Trader goods; pays at most PriceGuard.maxNpcOrderPrice x amount, no shop items; only pick items that the market NPC doesn't sell either). Optional per mission: icon, keyTier/keys (otherwise from the root), enabled. Admin: /smpeco missions elite [set <id>|clear|preview|status <player>|reset <player>|raids].",
+  "enabled": true,
+  "seed": 0,
+  "keyTier": "epic",
+  "keys": 1,
+  "announceStart": true,
+  "announceComplete": true,
+  "missions": [
+    {
+      "id": "warden",
+      "type": "kill",
+      "name": "Warden Hunt",
+      "description": "Kill a Warden.",
+      "entities": ["minecraft:warden"],
+      "amount": 1,
+      "rewardCents": 2000000,
+      "icon": "minecraft:sculk_shrieker"
+    },
+    {
+      "id": "warden_double",
+      "type": "kill",
+      "name": "Double Silence",
+      "description": "Kill two Wardens.",
+      "entities": ["minecraft:warden"],
+      "amount": 2,
+      "rewardCents": 2500000,
+      "icon": "minecraft:echo_shard"
+    },
+    {
+      "id": "raid",
+      "type": "raid",
+      "name": "Hero of the Village",
+      "description": "Win a raid that starts at level V and kill at least 5 raiders yourself.",
+      "minRaidLevel": 5,
+      "minRaidKills": 5,
+      "minRaidKillShare": 0.2,
+      "amount": 1,
+      "rewardCents": 2000000,
+      "icon": "minecraft:bell"
+    },
+    {
+      "id": "elder_guardians",
+      "type": "kill",
+      "name": "Monument Assault",
+      "description": "Kill 3 Elder Guardians.",
+      "entities": ["minecraft:elder_guardian"],
+      "amount": 3,
+      "rewardCents": 1500000,
+      "icon": "minecraft:wet_sponge"
+    },
+    {
+      "id": "wither",
+      "type": "kill",
+      "name": "Wither Slayer",
+      "description": "Defeat the Wither.",
+      "entities": ["minecraft:wither"],
+      "amount": 1,
+      "rewardCents": 1800000,
+      "icon": "minecraft:nether_star"
+    },
+    {
+      "id": "netherite_block",
+      "type": "deliver",
+      "name": "Netherite Treasure",
+      "description": "Bring 1 Block of Netherite (unmodified).",
+      "item": "minecraft:netherite_block",
+      "amount": 1,
+      "rewardCents": 2200000
+    },
+    {
+      "id": "ancient_debris",
+      "type": "deliver",
+      "name": "Deep Mining",
+      "description": "Bring 40 Ancient Debris at once.",
+      "item": "minecraft:ancient_debris",
+      "amount": 40,
+      "rewardCents": 1800000
+    },
+    {
+      "id": "piglin_brutes",
+      "type": "kill",
+      "name": "Bastion Siege",
+      "description": "Kill 6 Piglin Brutes.",
+      "entities": ["minecraft:piglin_brute"],
+      "amount": 6,
+      "rewardCents": 1750000,
+      "icon": "minecraft:golden_axe"
+    },
+    {
+      "id": "ravager",
+      "type": "kill",
+      "name": "Ravager Hunter",
+      "description": "Kill 8 Ravagers.",
+      "entities": ["minecraft:ravager"],
+      "amount": 8,
+      "rewardCents": 1500000,
+      "icon": "minecraft:saddle"
+    },
+    {
+      "id": "shulker",
+      "type": "kill",
+      "name": "End City Sweep",
+      "description": "Kill 30 Shulkers (no farmed ones).",
+      "entities": ["minecraft:shulker"],
+      "amount": 30,
+      "rewardCents": 1600000,
+      "icon": "minecraft:shulker_shell"
+    },
+    {
+      "id": "evoker",
+      "type": "kill",
+      "name": "Evoker Hunt",
+      "description": "Kill 6 Evokers.",
+      "entities": ["minecraft:evoker"],
+      "amount": 6,
+      "rewardCents": 1500000,
+      "icon": "minecraft:totem_of_undying"
+    }
+  ]
+}

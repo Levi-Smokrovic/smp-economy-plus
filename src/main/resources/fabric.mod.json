@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "smpeconomy",
+  "version": "${version}",
+  "name": "SMP Economy+",
+  "description": "Server-side economy for Fabric SMP servers: balance and /pay, /sell, /shop, auction house, buy orders, jobs, daily tasks and missions, bank, sidebar, stats, leaderboards and NPCs. Optional extras like casino, lottery, clans, bounties and chat games. Works with vanilla clients.",
+  "authors": [
+    "Levi (12iveL)"
+  ],
+  "contact": {
+    "homepage": "${homepage}",
+    "sources": "${sources}",
+    "issues": "${sources}/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/smpeconomy/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "dev.smpeconomy.SmpEconomy"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_min}",
+    "minecraft": "${mc_compat}",
+    "java": ">=${java}",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "carpet": "*",
+    "luckperms": "*",
+    "placeholder-api": "*",
+    "styledplayerlist": "*",
+    "treeharvester": "*",
+    "vanish": "*",
+    "veinminer": "*"
+  },
+  "mixins": [
+    "smpeconomy.core.mixins.json",
+    "smpeconomy.sell.mixins.json",
+    "smpeconomy.jobs.mixins.json",
+    "smpeconomy.tasks.mixins.json",
+    "smpeconomy.minigames.mixins.json",
+    "smpeconomy.hud.mixins.json",
+    "smpeconomy.settings.mixins.json",
+    "smpeconomy.missions.mixins.json"
+  ]
+}

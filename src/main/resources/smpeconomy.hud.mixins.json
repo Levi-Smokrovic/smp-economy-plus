@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.smpeconomy.features.hud.mixin",
+  "compatibilityLevel": "${mixin_java}",
+  "plugin": "dev.smpeconomy.core.module.ModuleMixinPlugin",
+  "mixins": [
+    "ServerScoreboardMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,590 @@
+{
+  "words": [
+    "DIAMOND",
+    "EMERALD",
+    "REDSTONE",
+    "CREEPER",
+    "ZOMBIE",
+    "SKELETON",
+    "SPIDER",
+    "ENDERMAN",
+    "OBSIDIAN",
+    "NETHERITE",
+    "PICKAXE",
+    "SWORD",
+    "SHOVEL",
+    "SHEARS",
+    "ARROW",
+    "CROSSBOW",
+    "TRIDENT",
+    "SHIELD",
+    "ELYTRA",
+    "FIREWORK",
+    "TORCH",
+    "LANTERN",
+    "CRAFTER",
+    "FURNACE",
+    "ANVIL",
+    "BOOKSHELF",
+    "CHEST",
+    "HOPPER",
+    "DISPENSER",
+    "DROPPER",
+    "OBSERVER",
+    "PISTON",
+    "RAIL",
+    "COMPASS",
+    "SPYGLASS",
+    "BUCKET",
+    "SADDLE",
+    "LEAD",
+    "PUMPKIN",
+    "MELON",
+    "CARROT",
+    "POTATO",
+    "WHEAT",
+    "BAMBOO",
+    "CACTUS",
+    "SAPLING",
+    "BIRCH",
+    "SPRUCE",
+    "ACACIA",
+    "MANGROVE",
+    "CHERRY",
+    "VILLAGER",
+    "PILLAGER",
+    "WITCH",
+    "SLIME",
+    "GHAST",
+    "BLAZE",
+    "WITHER",
+    "DRAGON",
+    "GUARDIAN",
+    "SHULKER",
+    "PHANTOM",
+    "AXOLOTL",
+    "PARROT",
+    "TURTLE",
+    "DOLPHIN",
+    "PANDA",
+    "RABBIT",
+    "OCELOT",
+    "HORSE",
+    "BEEHIVE",
+    "PIGLIN",
+    "GOAT",
+    "FROG",
+    "TADPOLE",
+    "ALLAY",
+    "SNIFFER",
+    "NETHER",
+    "FORTRESS",
+    "BASTION",
+    "PORTAL",
+    "MINESHAFT",
+    "MANSION",
+    "TEMPLE",
+    "SHIPWRECK",
+    "DEEPSLATE",
+    "COBBLESTONE",
+    "GRANITE",
+    "DIORITE",
+    "ANDESITE",
+    "SANDSTONE",
+    "GLOWSTONE",
+    "QUARTZ",
+    "AMETHYST",
+    "COPPER",
+    "INGOT",
+    "NUGGET",
+    "COAL",
+    "LAPIS",
+    "EXPERIENCE",
+    "ENCHANTMENT",
+    "POTION",
+    "APPLE",
+    "PEARL",
+    "SLIMEBALL",
+    "BONE",
+    "GUNPOWDER",
+    "FEATHER",
+    "LEATHER",
+    "WOOL",
+    "CAMPFIRE",
+    "BELL",
+    "AUCTION",
+    "TREASURY",
+    "BOUNTY",
+    "TREASURE",
+    "ARMOR",
+    "CHESTPLATE",
+    "HELMET",
+    "BOOTS",
+    "LEGGINGS",
+    "MAGMA",
+    "LLAMA",
+    "WOLF",
+    "CHICKEN",
+    "MUSHROOM",
+    "SEAGRASS",
+    "CORAL",
+    "PRISMARINE",
+    "SPONGE",
+    "TERRACOTTA",
+    "BEACON",
+    "HONEYCOMB",
+    "COMPOSTER",
+    "LOOM",
+    "STONECUTTER",
+    "GRINDSTONE",
+    "SMOKER",
+    "BARREL",
+    "LECTERN",
+    "CAULDRON",
+    "JUKEBOX",
+    "TRAPDOOR",
+    "LADDER",
+    "SCAFFOLDING",
+    "SCULK",
+    "WARDEN",
+    "BREEZE",
+    "VAULT",
+    "SPAWNER",
+    "NAUTILUS",
+    "CONDUIT",
+    "LODESTONE",
+    "CALCITE",
+    "BASALT",
+    "BLACKSTONE",
+    "NETHERRACK",
+    "MYCELIUM",
+    "PODZOL",
+    "GRAVEL",
+    "SNOWBALL",
+    "EVOKER",
+    "VINDICATOR",
+    "RAVAGER",
+    "HOGLIN",
+    "STRIDER",
+    "SILVERFISH",
+    "ENDERMITE",
+    "DROWNED",
+    "HUSK",
+    "STRAY",
+    "ARMADILLO",
+    "CAMEL",
+    "SQUID",
+    "SALMON",
+    "PUFFERFISH",
+    "CLOCK",
+    "BOOK",
+    "PAPER",
+    "SUGAR",
+    "BREAD",
+    "COOKIE",
+    "BEETROOT",
+    "KELP",
+    "CHORUS"
+  ],
+  "phrases": [
+    "Creepers love to go boom",
+    "Diamonds are forever",
+    "I love this server",
+    "First to type wins",
+    "My horse is called Bernd",
+    "Netherite beats diamond",
+    "Please do not jump into lava",
+    "The Ender Dragon is waiting for you",
+    "It is market day at the auction house",
+    "Sadly pigs cannot fly",
+    "Torches keep the monsters away",
+    "Never go mining without a pickaxe",
+    "Endermen hate eye contact",
+    "A golden apple a day",
+    "The Treasury is well stocked",
+    "Villagers love trading for emeralds",
+    "It is pretty hot in the Nether",
+    "Sleeping skips the night",
+    "Cows give milk and leather",
+    "Redstone is like electricity",
+    "My house is made of cobblestone",
+    "I found a hidden treasure",
+    "Water puts out every fire",
+    "Bees love flowers",
+    "The Wither is not a pet",
+    "Axolotls are the best",
+    "Elytra and fireworks are fun",
+    "The weather in Minecraft is moody",
+    "Bone meal makes everything grow",
+    "Mushroom stew fills you up",
+    "Glowstone lights up the Nether",
+    "Turtles lay eggs on the beach",
+    "A village without a bell is no village",
+    "Dig deep to find diamonds",
+    "First wood then a crafting table"
+  ],
+  "riddles": [
+    {
+      "answers": [
+        "Diamond",
+        "Diamonds",
+        "diamond"
+      ],
+      "hints": [
+        "I am light blue and I sparkle.",
+        "You find me deep down, often near lava.",
+        "I make the second-best armor."
+      ]
+    },
+    {
+      "answers": [
+        "Golden Apple",
+        "golden_apple"
+      ],
+      "hints": [
+        "I am a fruit, but made of gold.",
+        "I give you Absorption and Regeneration.",
+        "You craft me from an apple and eight gold ingots."
+      ]
+    },
+    {
+      "answers": [
+        "Ender Pearl",
+        "ender_pearl"
+      ],
+      "hints": [
+        "Throw me and you land where I hit the ground.",
+        "Tall black creatures drop me.",
+        "I am green and round."
+      ]
+    },
+    {
+      "answers": [
+        "Totem of Undying",
+        "Totem",
+        "totem_of_undying"
+      ],
+      "hints": [
+        "I save you from death once.",
+        "Evokers in woodland mansions drop me.",
+        "Hold me in your hand when things get close."
+      ]
+    },
+    {
+      "answers": [
+        "Elytra",
+        "elytra"
+      ],
+      "hints": [
+        "With me you can glide through the air.",
+        "You find me on ships in the End.",
+        "Fireworks make me really fast."
+      ]
+    },
+    {
+      "answers": [
+        "Torch",
+        "torch"
+      ],
+      "hints": [
+        "I bring light into the dark.",
+        "You make me from coal and a stick.",
+        "Fewer monsters spawn near me."
+      ]
+    },
+    {
+      "answers": [
+        "Crafting Table",
+        "crafting_table"
+      ],
+      "hints": [
+        "I have a 3x3 grid.",
+        "You build me from four planks.",
+        "Without me you can hardly craft anything."
+      ]
+    },
+    {
+      "answers": [
+        "Slimeball",
+        "Slime Ball",
+        "slime_ball"
+      ],
+      "hints": [
+        "I am green and sticky.",
+        "Sticky pistons need me.",
+        "Bouncing green cubes drop me."
+      ]
+    },
+    {
+      "answers": [
+        "Compass",
+        "compass"
+      ],
+      "hints": [
+        "I always point to the world spawn.",
+        "You craft me from iron and redstone.",
+        "Sailors trust me."
+      ]
+    },
+    {
+      "answers": [
+        "Clock",
+        "clock"
+      ],
+      "hints": [
+        "I show you the time of day.",
+        "You craft me from gold and redstone.",
+        "I am especially useful underground."
+      ]
+    },
+    {
+      "answers": [
+        "Bucket",
+        "bucket"
+      ],
+      "hints": [
+        "I can carry water, lava and even milk.",
+        "You craft me from three iron ingots.",
+        "You catch axolotls with me."
+      ]
+    },
+    {
+      "answers": [
+        "Saddle",
+        "saddle"
+      ],
+      "hints": [
+        "You can't craft me, only find me.",
+        "Without me you can't ride a horse.",
+        "Pigs look funny wearing me."
+      ]
+    },
+    {
+      "answers": [
+        "Name Tag",
+        "Nametag",
+        "name_tag"
+      ],
+      "hints": [
+        "I give animals a name.",
+        "Mobs with me no longer despawn.",
+        "You write on me at an anvil."
+      ]
+    },
+    {
+      "answers": [
+        "Trident",
+        "trident"
+      ],
+      "hints": [
+        "Drowned sometimes carry me.",
+        "With Loyalty I come back to you.",
+        "I have three prongs."
+      ]
+    },
+    {
+      "answers": [
+        "Netherite Ingot",
+        "Netherite",
+        "netherite_ingot"
+      ],
+      "hints": [
+        "I am stronger than diamond.",
+        "You need ancient debris and gold for me.",
+        "I don't burn in lava."
+      ]
+    },
+    {
+      "answers": [
+        "Gunpowder",
+        "gunpowder"
+      ],
+      "hints": [
+        "Green hissing monsters drop me.",
+        "There is no TNT without me.",
+        "I am grey and dusty."
+      ]
+    },
+    {
+      "answers": [
+        "Bone",
+        "bone"
+      ],
+      "hints": [
+        "Skeletons drop me.",
+        "I turn into bone meal.",
+        "Wolves love me."
+      ]
+    },
+    {
+      "answers": [
+        "Blaze Rod",
+        "blaze_rod"
+      ],
+      "hints": [
+        "I come from Nether fortresses.",
+        "There is no brewing stand without me.",
+        "I am orange and hot."
+      ]
+    },
+    {
+      "answers": [
+        "Cake",
+        "cake"
+      ],
+      "hints": [
+        "I have seven slices.",
+        "You need milk, sugar, an egg and wheat for me.",
+        "You place me on a block instead of eating me like bread."
+      ]
+    },
+    {
+      "answers": [
+        "Bed",
+        "bed"
+      ],
+      "hints": [
+        "With me you skip the night.",
+        "I explode in the Nether.",
+        "You craft me from wool and wood."
+      ]
+    },
+    {
+      "answers": [
+        "Shield",
+        "shield"
+      ],
+      "hints": [
+        "I block arrows.",
+        "An axe hit disables me for a moment.",
+        "You craft me from wood and an iron ingot."
+      ]
+    },
+    {
+      "answers": [
+        "TNT",
+        "tnt",
+        "Dynamite"
+      ],
+      "hints": [
+        "I go boom.",
+        "I am made of sand and gunpowder.",
+        "Redstone or fire set me off."
+      ]
+    },
+    {
+      "answers": [
+        "Pumpkin",
+        "pumpkin"
+      ],
+      "hints": [
+        "I am orange and grow on farmland.",
+        "Wear me as a helmet and Endermen stay calm.",
+        "Snow golems need me as a head."
+      ]
+    },
+    {
+      "answers": [
+        "Anvil",
+        "anvil"
+      ],
+      "hints": [
+        "I am heavy and fall down.",
+        "You repair and rename tools at me.",
+        "You craft me from iron blocks."
+      ]
+    },
+    {
+      "answers": [
+        "Glowstone",
+        "glowstone"
+      ],
+      "hints": [
+        "I glow and hang from the Nether ceiling.",
+        "I crumble to dust when you mine me.",
+        "I charge a respawn anchor."
+      ]
+    },
+    {
+      "answers": [
+        "Emerald",
+        "emerald"
+      ],
+      "hints": [
+        "I am green and valuable.",
+        "Villagers trade with me.",
+        "You mostly find me in the mountains."
+      ]
+    },
+    {
+      "answers": [
+        "Fishing Rod",
+        "fishing_rod"
+      ],
+      "hints": [
+        "With me you catch fish and sometimes treasure.",
+        "You craft me from sticks and string.",
+        "I have a bobber."
+      ]
+    },
+    {
+      "answers": [
+        "Firework Rocket",
+        "Firework",
+        "Fireworks",
+        "firework_rocket"
+      ],
+      "hints": [
+        "I fly high and make colorful explosions.",
+        "Elytra flyers love me.",
+        "You need paper and gunpowder for me."
+      ]
+    },
+    {
+      "answers": [
+        "Spyglass",
+        "spyglass"
+      ],
+      "hints": [
+        "With me you can see far into the distance.",
+        "You craft me from copper and amethyst.",
+        "I zoom, but I am not a camera."
+      ]
+    },
+    {
+      "answers": [
+        "Pickaxe",
+        "Pickaxes",
+        "pickaxe"
+      ],
+      "hints": [
+        "Without me you don't get any stone.",
+        "I have a handle and two points.",
+        "You mine ores with me."
+      ]
+    },
+    {
+      "answers": [
+        "Milk Bucket",
+        "Milk",
+        "milk_bucket"
+      ],
+      "hints": [
+        "Cows give me.",
+        "I remove all potion effects.",
+        "You carry me in a bucket."
+      ]
+    },
+    {
+      "answers": [
+        "Sugar Cane",
+        "sugar_cane"
+      ],
+      "hints": [
+        "I only grow right next to water.",
+        "Paper and sugar are made from me.",
+        "I am green and grow upwards."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,765 @@
+{
+  "_info": "Mission Board (/missions). Amounts in cents. Types: deliver (item, amount; pays rewardPerItemCents per delivered unmodified item, 0 = price limit, always <= PriceGuard.maxNpcOrderPrice; no completion money and never crate keys, because the items can be bought from the server), stat (stats = vanilla statistics 'type:object', e.g. killed:skeleton, mined:diamond_ore, crafted:bread, custom:fish_caught; difference since accepting; mined: only counts natural blocks the player mined one by one, not Veinminer chain blocks; killed: only counts mobs the player killed, by origin – bred, summoned, spawn egg and respawned mobs (Ender Dragon after the world's first) never count, spawner mobs × spawnerKillFactor; dragon-only missions are no longer offered once the first dragon has been defeated), treasure (fishing treasures), explore (dimension/biome/structure, '#tag' allowed; each target and each structure instance pays only once per player and is not offered again). Optional per mission: icon, weight, timeLimitMinutes (0 = tier), keyTier/keys (otherwise tier; not for deliver), enabled. rotationHours must divide 24.",
+  "maxActive": 3,
+  "rotationHours": 6,
+  "cancelCooldownMinutes": 30,
+  "rotationSeed": 0,
+  "announceElite": true,
+  "progressActionbar": true,
+  "spawnerKillFactor": 0.25,
+  "tiers": {
+    "easy": {
+      "label": "Easy",
+      "color": "§a",
+      "icon": "minecraft:lime_dye",
+      "offers": 4,
+      "timeLimitMinutes": 120,
+      "keyTier": "",
+      "keys": 0
+    },
+    "medium": {
+      "label": "Medium",
+      "color": "§e",
+      "icon": "minecraft:yellow_dye",
+      "offers": 3,
+      "timeLimitMinutes": 360,
+      "keyTier": "",
+      "keys": 0
+    },
+    "hard": {
+      "label": "Hard",
+      "color": "§6",
+      "icon": "minecraft:orange_dye",
+      "offers": 3,
+      "timeLimitMinutes": 1440,
+      "keyTier": "rare",
+      "keys": 1
+    },
+    "elite": {
+      "label": "Elite",
+      "color": "§d",
+      "icon": "minecraft:magenta_dye",
+      "offers": 2,
+      "timeLimitMinutes": 2880,
+      "keyTier": "epic",
+      "keys": 1
+    }
+  },
+  "missions": [
+    {
+      "id": "easy_stone",
+      "tier": "easy",
+      "type": "deliver",
+      "name": "Stonemason",
+      "description": "Bring 64 Stone (unmodified).",
+      "item": "minecraft:stone",
+      "amount": 64
+    },
+    {
+      "id": "easy_oak_log",
+      "tier": "easy",
+      "type": "deliver",
+      "name": "Timber Delivery",
+      "description": "Bring 32 Oak Logs.",
+      "item": "minecraft:oak_log",
+      "amount": 32
+    },
+    {
+      "id": "easy_wheat",
+      "tier": "easy",
+      "type": "deliver",
+      "name": "Harvest Helper",
+      "description": "Bring 64 Wheat.",
+      "item": "minecraft:wheat",
+      "amount": 64
+    },
+    {
+      "id": "easy_potatoes",
+      "tier": "easy",
+      "type": "deliver",
+      "name": "Potato Harvest",
+      "description": "Bring 64 Potatoes.",
+      "item": "minecraft:potato",
+      "amount": 64
+    },
+    {
+      "id": "easy_sugar_cane",
+      "tier": "easy",
+      "type": "deliver",
+      "name": "Sweet Cargo",
+      "description": "Bring 64 Sugar Cane.",
+      "item": "minecraft:sugar_cane",
+      "amount": 64
+    },
+    {
+      "id": "easy_coal",
+      "tier": "easy",
+      "type": "deliver",
+      "name": "Coal Hauler",
+      "description": "Bring 32 Coal.",
+      "item": "minecraft:coal",
+      "amount": 32
+    },
+    {
+      "id": "easy_zombies",
+      "tier": "easy",
+      "type": "stat",
+      "name": "Zombie Hunt",
+      "description": "Defeat 15 Zombies.",
+      "stats": [
+        "killed:zombie",
+        "killed:zombie_villager",
+        "killed:husk",
+        "killed:drowned"
+      ],
+      "amount": 15,
+      "rewardCents": 25000,
+      "icon": "minecraft:rotten_flesh"
+    },
+    {
+      "id": "easy_spiders",
+      "tier": "easy",
+      "type": "stat",
+      "name": "Spider Plague",
+      "description": "Defeat 10 Spiders.",
+      "stats": [
+        "killed:spider",
+        "killed:cave_spider"
+      ],
+      "amount": 10,
+      "rewardCents": 20000,
+      "icon": "minecraft:spider_eye"
+    },
+    {
+      "id": "easy_quarry",
+      "tier": "easy",
+      "type": "stat",
+      "name": "Quarry",
+      "description": "Mine 128 Stone or Deepslate.",
+      "stats": [
+        "mined:stone",
+        "mined:deepslate"
+      ],
+      "amount": 128,
+      "rewardCents": 15000,
+      "icon": "minecraft:iron_pickaxe"
+    },
+    {
+      "id": "easy_dirt",
+      "tier": "easy",
+      "type": "stat",
+      "name": "Digger",
+      "description": "Dig up 64 Dirt or Grass Blocks.",
+      "stats": [
+        "mined:dirt",
+        "mined:grass_block"
+      ],
+      "amount": 64,
+      "rewardCents": 12000,
+      "icon": "minecraft:iron_shovel"
+    },
+    {
+      "id": "easy_fish",
+      "tier": "easy",
+      "type": "stat",
+      "name": "Fishing Trip",
+      "description": "Catch 10 fish.",
+      "stats": [
+        "custom:fish_caught"
+      ],
+      "amount": 10,
+      "rewardCents": 20000,
+      "icon": "minecraft:cod"
+    },
+    {
+      "id": "easy_bread",
+      "tier": "easy",
+      "type": "stat",
+      "name": "Bakery",
+      "description": "Bake 32 Bread.",
+      "stats": [
+        "crafted:bread"
+      ],
+      "amount": 32,
+      "rewardCents": 15000,
+      "icon": "minecraft:bread"
+    },
+    {
+      "id": "easy_torches",
+      "tier": "easy",
+      "type": "stat",
+      "name": "Lightbringer",
+      "description": "Craft 64 Torches.",
+      "stats": [
+        "crafted:torch"
+      ],
+      "amount": 64,
+      "rewardCents": 10000,
+      "icon": "minecraft:torch"
+    },
+    {
+      "id": "easy_lumberjack",
+      "tier": "easy",
+      "type": "stat",
+      "name": "Lumberjack",
+      "description": "Chop 64 logs (Oak, Birch or Spruce).",
+      "stats": [
+        "mined:oak_log",
+        "mined:birch_log",
+        "mined:spruce_log"
+      ],
+      "amount": 64,
+      "rewardCents": 18000,
+      "icon": "minecraft:iron_axe"
+    },
+    {
+      "id": "easy_nether",
+      "tier": "easy",
+      "type": "explore",
+      "name": "Hell's Gate",
+      "description": "Enter the Nether.",
+      "rewardCents": 20000,
+      "icon": "minecraft:netherrack",
+      "dimension": "minecraft:the_nether"
+    },
+    {
+      "id": "easy_village",
+      "tier": "easy",
+      "type": "explore",
+      "name": "Village Visit",
+      "description": "Visit a village.",
+      "rewardCents": 15000,
+      "icon": "minecraft:bell",
+      "structure": "#minecraft:village"
+    },
+    {
+      "id": "easy_cherry",
+      "tier": "easy",
+      "type": "explore",
+      "name": "Cherry Blossoms",
+      "description": "Visit a Cherry Grove.",
+      "rewardCents": 25000,
+      "icon": "minecraft:cherry_sapling",
+      "biome": "minecraft:cherry_grove"
+    },
+    {
+      "id": "medium_iron",
+      "tier": "medium",
+      "type": "deliver",
+      "name": "Smith's Supplies",
+      "description": "Bring 32 Iron Ingots.",
+      "item": "minecraft:iron_ingot",
+      "amount": 32
+    },
+    {
+      "id": "medium_gold",
+      "tier": "medium",
+      "type": "deliver",
+      "name": "Gold Prospector",
+      "description": "Bring 16 Gold Ingots.",
+      "item": "minecraft:gold_ingot",
+      "amount": 16
+    },
+    {
+      "id": "medium_copper",
+      "tier": "medium",
+      "type": "deliver",
+      "name": "Copper Kettle",
+      "description": "Bring 64 Copper Ingots.",
+      "item": "minecraft:copper_ingot",
+      "amount": 64
+    },
+    {
+      "id": "medium_blaze_rods",
+      "tier": "medium",
+      "type": "deliver",
+      "name": "Brewing Supplies",
+      "description": "Bring 16 Blaze Rods.",
+      "item": "minecraft:blaze_rod",
+      "amount": 16
+    },
+    {
+      "id": "medium_gunpowder",
+      "tier": "medium",
+      "type": "deliver",
+      "name": "Demolition Expert",
+      "description": "Bring 32 Gunpowder.",
+      "item": "minecraft:gunpowder",
+      "amount": 32
+    },
+    {
+      "id": "medium_quartz",
+      "tier": "medium",
+      "type": "deliver",
+      "name": "Quartz Vein",
+      "description": "Bring 64 Nether Quartz.",
+      "item": "minecraft:quartz",
+      "amount": 64
+    },
+    {
+      "id": "medium_skeletons",
+      "tier": "medium",
+      "type": "stat",
+      "name": "Bone Breaker",
+      "description": "Defeat 25 Skeletons.",
+      "stats": [
+        "killed:skeleton",
+        "killed:stray",
+        "killed:bogged"
+      ],
+      "amount": 25,
+      "rewardCents": 70000,
+      "icon": "minecraft:bone"
+    },
+    {
+      "id": "medium_creeper",
+      "tier": "medium",
+      "type": "stat",
+      "name": "Bomb Squad",
+      "description": "Defeat 15 Creepers.",
+      "stats": [
+        "killed:creeper"
+      ],
+      "amount": 15,
+      "rewardCents": 65000,
+      "icon": "minecraft:gunpowder"
+    },
+    {
+      "id": "medium_endermen",
+      "tier": "medium",
+      "type": "stat",
+      "name": "Ender Hunter",
+      "description": "Defeat 10 Endermen.",
+      "stats": [
+        "killed:enderman"
+      ],
+      "amount": 10,
+      "rewardCents": 90000,
+      "icon": "minecraft:ender_pearl"
+    },
+    {
+      "id": "medium_iron_ore",
+      "tier": "medium",
+      "type": "stat",
+      "name": "Iron Mining",
+      "description": "Mine 32 Iron Ore.",
+      "stats": [
+        "mined:iron_ore",
+        "mined:deepslate_iron_ore"
+      ],
+      "amount": 32,
+      "rewardCents": 60000,
+      "icon": "minecraft:iron_ore"
+    },
+    {
+      "id": "medium_fish",
+      "tier": "medium",
+      "type": "stat",
+      "name": "Fisher",
+      "description": "Catch 30 fish.",
+      "stats": [
+        "custom:fish_caught"
+      ],
+      "amount": 30,
+      "rewardCents": 60000,
+      "icon": "minecraft:salmon"
+    },
+    {
+      "id": "medium_cake",
+      "tier": "medium",
+      "type": "stat",
+      "name": "Pastry Shop",
+      "description": "Bake 5 Cakes.",
+      "stats": [
+        "crafted:cake"
+      ],
+      "amount": 5,
+      "rewardCents": 50000,
+      "icon": "minecraft:cake"
+    },
+    {
+      "id": "medium_fortress",
+      "tier": "medium",
+      "type": "explore",
+      "name": "Nether Fortress",
+      "description": "Find a Nether Fortress.",
+      "rewardCents": 100000,
+      "icon": "minecraft:nether_bricks",
+      "structure": "minecraft:fortress"
+    },
+    {
+      "id": "medium_mushroom",
+      "tier": "medium",
+      "type": "explore",
+      "name": "Mushroom Island",
+      "description": "Visit Mushroom Fields.",
+      "rewardCents": 120000,
+      "icon": "minecraft:red_mushroom_block",
+      "biome": "minecraft:mushroom_fields"
+    },
+    {
+      "id": "medium_desert_temple",
+      "tier": "medium",
+      "type": "explore",
+      "name": "Desert Temple",
+      "description": "Find a Desert Temple.",
+      "rewardCents": 90000,
+      "icon": "minecraft:chiseled_sandstone",
+      "structure": "minecraft:desert_pyramid"
+    },
+    {
+      "id": "medium_outpost",
+      "tier": "medium",
+      "type": "explore",
+      "name": "Outpost",
+      "description": "Find a Pillager Outpost.",
+      "rewardCents": 90000,
+      "icon": "minecraft:crossbow",
+      "structure": "minecraft:pillager_outpost"
+    },
+    {
+      "id": "medium_ice_spikes",
+      "tier": "medium",
+      "type": "explore",
+      "name": "Icy Spikes",
+      "description": "Visit an Ice Spikes biome.",
+      "rewardCents": 100000,
+      "icon": "minecraft:packed_ice",
+      "biome": "minecraft:ice_spikes"
+    },
+    {
+      "id": "hard_diamonds",
+      "tier": "hard",
+      "type": "deliver",
+      "name": "Jeweler",
+      "description": "Bring 5 Diamonds.",
+      "item": "minecraft:diamond",
+      "amount": 5
+    },
+    {
+      "id": "hard_emeralds",
+      "tier": "hard",
+      "type": "deliver",
+      "name": "Emerald Trade",
+      "description": "Bring 16 Emeralds.",
+      "item": "minecraft:emerald",
+      "amount": 16
+    },
+    {
+      "id": "hard_ghast_tears",
+      "tier": "hard",
+      "type": "deliver",
+      "name": "Tear Collector",
+      "description": "Bring 8 Ghast Tears.",
+      "item": "minecraft:ghast_tear",
+      "amount": 8
+    },
+    {
+      "id": "hard_nautilus",
+      "tier": "hard",
+      "type": "deliver",
+      "name": "Shell Seeker",
+      "description": "Bring 5 Nautilus Shells.",
+      "item": "minecraft:nautilus_shell",
+      "amount": 5
+    },
+    {
+      "id": "hard_iron_blocks",
+      "tier": "hard",
+      "type": "deliver",
+      "name": "Bulk Iron Delivery",
+      "description": "Bring 16 Blocks of Iron.",
+      "item": "minecraft:iron_block",
+      "amount": 16
+    },
+    {
+      "id": "hard_ghasts",
+      "tier": "hard",
+      "type": "stat",
+      "name": "Ghast Hunter",
+      "description": "Defeat 3 Ghasts.",
+      "stats": [
+        "killed:ghast"
+      ],
+      "amount": 3,
+      "rewardCents": 250000,
+      "icon": "minecraft:ghast_tear"
+    },
+    {
+      "id": "hard_treasure",
+      "tier": "hard",
+      "type": "treasure",
+      "name": "Treasure Angler",
+      "description": "Fish up 10 treasures (e.g. Name Tag, Saddle).",
+      "amount": 10,
+      "rewardCents": 300000,
+      "icon": "minecraft:name_tag"
+    },
+    {
+      "id": "hard_witches",
+      "tier": "hard",
+      "type": "stat",
+      "name": "Witch Hunt",
+      "description": "Defeat 5 Witches.",
+      "stats": [
+        "killed:witch"
+      ],
+      "amount": 5,
+      "rewardCents": 200000,
+      "icon": "minecraft:cauldron"
+    },
+    {
+      "id": "hard_diamond_ore",
+      "tier": "hard",
+      "type": "stat",
+      "name": "Diamond Mine",
+      "description": "Mine 16 Diamond Ore.",
+      "stats": [
+        "mined:diamond_ore",
+        "mined:deepslate_diamond_ore"
+      ],
+      "amount": 16,
+      "rewardCents": 350000,
+      "icon": "minecraft:diamond_ore"
+    },
+    {
+      "id": "hard_blazes",
+      "tier": "hard",
+      "type": "stat",
+      "name": "Blaze Hunter",
+      "description": "Defeat 20 Blazes.",
+      "stats": [
+        "killed:blaze"
+      ],
+      "amount": 20,
+      "rewardCents": 250000,
+      "icon": "minecraft:blaze_rod"
+    },
+    {
+      "id": "hard_wither_skeletons",
+      "tier": "hard",
+      "type": "stat",
+      "name": "Black Bones",
+      "description": "Defeat 15 Wither Skeletons.",
+      "stats": [
+        "killed:wither_skeleton"
+      ],
+      "amount": 15,
+      "rewardCents": 300000,
+      "icon": "minecraft:coal"
+    },
+    {
+      "id": "hard_bastion",
+      "tier": "hard",
+      "type": "explore",
+      "name": "Bastion",
+      "description": "Find a Bastion Remnant.",
+      "rewardCents": 300000,
+      "icon": "minecraft:gilded_blackstone",
+      "structure": "minecraft:bastion_remnant"
+    },
+    {
+      "id": "hard_ancient_city",
+      "tier": "hard",
+      "type": "explore",
+      "name": "Ancient City",
+      "description": "Enter an Ancient City.",
+      "rewardCents": 400000,
+      "icon": "minecraft:sculk",
+      "structure": "minecraft:ancient_city"
+    },
+    {
+      "id": "hard_end",
+      "tier": "hard",
+      "type": "explore",
+      "name": "The End",
+      "description": "Enter the End.",
+      "rewardCents": 300000,
+      "icon": "minecraft:end_stone",
+      "dimension": "minecraft:the_end"
+    },
+    {
+      "id": "hard_trial_chambers",
+      "tier": "hard",
+      "type": "explore",
+      "name": "Trial Chambers",
+      "description": "Find Trial Chambers.",
+      "rewardCents": 250000,
+      "icon": "minecraft:copper_bulb",
+      "structure": "minecraft:trial_chambers"
+    },
+    {
+      "id": "hard_monument",
+      "tier": "hard",
+      "type": "explore",
+      "name": "Ocean Monument",
+      "description": "Find an Ocean Monument.",
+      "rewardCents": 300000,
+      "icon": "minecraft:prismarine",
+      "structure": "minecraft:monument"
+    },
+    {
+      "id": "elite_netherite",
+      "tier": "elite",
+      "type": "deliver",
+      "name": "Netherite Master",
+      "description": "Bring 2 Netherite Ingots.",
+      "item": "minecraft:netherite_ingot",
+      "amount": 2
+    },
+    {
+      "id": "elite_shulker",
+      "tier": "elite",
+      "type": "deliver",
+      "name": "Shulker Collector",
+      "description": "Bring 16 Shulker Shells.",
+      "item": "minecraft:shulker_shell",
+      "amount": 16
+    },
+    {
+      "id": "elite_ancient_debris",
+      "tier": "elite",
+      "type": "deliver",
+      "name": "Debris Delivery",
+      "description": "Bring 8 Ancient Debris.",
+      "item": "minecraft:ancient_debris",
+      "amount": 8
+    },
+    {
+      "id": "elite_diamond_blocks",
+      "tier": "elite",
+      "type": "deliver",
+      "name": "Treasure Vault",
+      "description": "Bring 8 Blocks of Diamond.",
+      "item": "minecraft:diamond_block",
+      "amount": 8
+    },
+    {
+      "id": "elite_wither_skulls",
+      "tier": "elite",
+      "type": "deliver",
+      "name": "Skull Collector",
+      "description": "Bring 3 Wither Skeleton Skulls.",
+      "item": "minecraft:wither_skeleton_skull",
+      "amount": 3
+    },
+    {
+      "id": "elite_wither",
+      "tier": "elite",
+      "type": "stat",
+      "name": "Wither Slayer",
+      "description": "Defeat the Wither.",
+      "stats": [
+        "killed:wither"
+      ],
+      "amount": 1,
+      "rewardCents": 1200000,
+      "icon": "minecraft:nether_star"
+    },
+    {
+      "id": "elite_dragon",
+      "tier": "elite",
+      "type": "stat",
+      "name": "Dragon Slayer",
+      "description": "Defeat the Ender Dragon.",
+      "stats": [
+        "killed:ender_dragon"
+      ],
+      "amount": 1,
+      "rewardCents": 1500000,
+      "icon": "minecraft:dragon_head"
+    },
+    {
+      "id": "elite_warden",
+      "tier": "elite",
+      "type": "stat",
+      "name": "Silent Danger",
+      "description": "Defeat a Warden.",
+      "stats": [
+        "killed:warden"
+      ],
+      "amount": 1,
+      "rewardCents": 1000000,
+      "icon": "minecraft:sculk_shrieker"
+    },
+    {
+      "id": "elite_shulker_hunt",
+      "tier": "elite",
+      "type": "stat",
+      "name": "Shulker Hunt",
+      "description": "Defeat 20 Shulkers.",
+      "stats": [
+        "killed:shulker"
+      ],
+      "amount": 20,
+      "rewardCents": 800000,
+      "icon": "minecraft:shulker_shell"
+    },
+    {
+      "id": "elite_deep_prospector",
+      "tier": "elite",
+      "type": "stat",
+      "name": "Deep Prospector",
+      "description": "Mine 16 Ancient Debris.",
+      "stats": [
+        "mined:ancient_debris"
+      ],
+      "amount": 16,
+      "rewardCents": 1000000,
+      "icon": "minecraft:ancient_debris"
+    },
+    {
+      "id": "elite_treasure",
+      "tier": "elite",
+      "type": "treasure",
+      "name": "Master Angler",
+      "description": "Fish up 25 treasures.",
+      "amount": 25,
+      "rewardCents": 900000,
+      "icon": "minecraft:enchanted_book"
+    },
+    {
+      "id": "elite_elder_guardians",
+      "tier": "elite",
+      "type": "stat",
+      "name": "Temple Guardians",
+      "description": "Defeat 3 Elder Guardians.",
+      "stats": [
+        "killed:elder_guardian"
+      ],
+      "amount": 3,
+      "rewardCents": 1200000,
+      "icon": "minecraft:prismarine_crystals"
+    },
+    {
+      "id": "elite_end_city",
+      "tier": "elite",
+      "type": "explore",
+      "name": "End City",
+      "description": "Find an End City.",
+      "rewardCents": 1000000,
+      "icon": "minecraft:purpur_block",
+      "structure": "minecraft:end_city"
+    },
+    {
+      "id": "elite_mansion",
+      "tier": "elite",
+      "type": "explore",
+      "name": "Woodland Mansion",
+      "description": "Find a Woodland Mansion.",
+      "rewardCents": 1200000,
+      "icon": "minecraft:dark_oak_log",
+      "structure": "minecraft:mansion"
+    },
+    {
+      "id": "elite_stronghold",
+      "tier": "elite",
+      "type": "explore",
+      "name": "The Stronghold",
+      "description": "Find a Stronghold.",
+      "rewardCents": 800000,
+      "icon": "minecraft:ender_eye",
+      "structure": "minecraft:stronghold"
+    }
+  ]
+}
