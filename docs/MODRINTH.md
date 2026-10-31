@@ -126,6 +126,6 @@ In-game text is English only, with no translation files. Going back to an older 
 
 ## Source and license
 
-The source is on [GitHub](https://github.com/Levi-Smokrovic/smp-economy-plus), under the MIT license, and the project has a [website](https://levi-smokrovic.github.io/smp-economy-plus/). You can use it in modpacks and forks. Please credit "SMP Economy+ by Levi (12iveL)" and link this page.
+The source is on [GitHub](https://github.com/Levi-Smokrovic/smp-economy-plus), under the MIT license, and the project has a [website](https://smp-economy-plus.pages.dev/). You can use it in modpacks and forks. Please credit "SMP Economy+ by Levi (12iveL)" and link this page.
 
 The jar bundles [sgui](https://github.com/Patbox/sgui) by Patbox (LGPL-3.0), [fabric-permissions-api](https://github.com/lucko/fabric-permissions-api) by lucko (MIT) and [Common Economy API](https://github.com/Patbox/common-economy-api) by Patbox (Apache-2.0).

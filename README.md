@@ -10,7 +10,7 @@ A server-side economy mod for Fabric SMP servers. Players join with a vanilla cl
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![Minecraft 1.21.11, 26.1.2, 26.2, 26.3](https://img.shields.io/badge/Minecraft-1.21.11%20%7C%2026.1.2%20%7C%2026.2%20%7C%2026.3-green)](#install)
 
-[Install](#install) · [Modules](#modules) · [Money](#how-the-money-works) · [Admin](#admin) · [Works with](#works-with) · [Commands](docs/commands.md) · [Config](docs/configuration.md) · [Website](https://levi-smokrovic.github.io/smp-economy-plus/)
+[Install](#install) · [Modules](#modules) · [Money](#how-the-money-works) · [Admin](#admin) · [Works with](#works-with) · [Commands](docs/commands.md) · [Config](docs/configuration.md) · [Website](https://smp-economy-plus.pages.dev/)
 
 ![Three NPCs on a platform with the SMP Economy sidebar on the right](docs/images/sidebar-and-npcs.png)
 
